@@ -1,0 +1,54 @@
+# Landscape2 settings
+#
+# This settings file allows customizing some aspects of the landscape.
+#
+# Reference documentation: https://github.com/cncf/landscape2/blob/main/docs/config/settings.yml
+
+foundation: Agentic Community
+
+url: http://127.0.0.1:8000
+
+base_path: /agentic-landscape
+
+colors:
+  color1: "rgba(0, 107, 204, 1)"
+  color2: "rgba(255, 0, 170, 1)"
+  color3: "rgba(96, 149, 214, 1)"
+  color4: "rgba(0, 42, 81, 0.7)"
+  color5: "rgba(1, 107, 204, 0.7)"
+  color6: "rgba(0, 42, 81, 0.7)"
+  color7: "rgba(180, 219, 255, 1)"
+
+description: Agentic AI Landscape
+
+#featured_items:
+#  - field: maturity
+#    options:
+#      - value: graduated
+#        order: 1
+#        label: Graduated
+
+footer:
+  links:
+    github: "https://github.com/agentic-community"
+    homepage: "https://agentic-community.com"
+#    slack: "https://slack.cncf.io/"
+#  logo: "build/images/logo.svg"
+
+grid_items_size: large
+
+#groups:
+#  - name: Some categories
+#    categories:
+#      - Category 1
+#      - Category 2
+#  - name: Only category 2
+#    categories:
+#      - Category 2
+
+header:
+  links:
+    github: "https://github.com/agentic-community/"
+#  logo: "build/images/logo.svg"
+
+#screenshot_width: 1500
