@@ -1,0 +1,48 @@
+name: Build and Deploy Landscape
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+
+      - name: Install landscape2
+        run: |
+          curl -LO https://github.com/cncf/landscape2/releases/download/v1.1.0/landscape2-x86_64-unknown-linux-gnu.tar.xz
+          tar -xvf landscape2-x86_64-unknown-linux-gnu.tar.xz
+          chmod +x landscape2-x86_64-unknown-linux-gnu/landscape2
+          sudo mv landscape2-x86_64-unknown-linux-gnu/landscape2 /usr/local/bin/
+
+      - name: Build landscape
+        env:
+          GITHUB_TOKENS: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          landscape2 build \
+            --data-file agentic-landscape/data.yml \
+            --settings-file agentic-landscape/settings.yml \
+            --guide-file agentic-landscape/guide.yml \
+            --logos-path agentic-landscape/logos \
+            --output-dir build
+
+      - name: Deploy to gh-pages branch
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages

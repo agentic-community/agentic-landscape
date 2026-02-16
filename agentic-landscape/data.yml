@@ -1,0 +1,210 @@
+# TODO: Support self-hosted vs vendored solutions
+categories:
+  - name: Agentic
+    subcategories:
+      - name: Runtime
+        items:
+          - name: Kubernetes
+            homepage_url: https://agentic-community.com
+            repo_url: https://github.com/kubernetes/kubernetes
+            extra:
+              dev_stats_url: https://k8s.devstats.cncf.io/
+            branch: master
+            logo: kubernetes.svg
+      - name: Evaluations
+        items:
+          - name: TruLens
+            homepage_url: https://trulens.org
+            repo_url: https://github.com/truera/trulens
+            logo: trulens.svg
+          - name: "HAL: The Holistic Agent Leaderboard"
+            homepage_url: https://github.com/princeton-pli/hal-harness
+            repo_url: https://github.com/princeton-pli/hal-harness
+            logo: hal.png
+          - name: Agent Evaluation
+            homepage_url: https://awslabs.github.io/agent-evaluation/
+            repo_url: https://github.com/awslabs/agent-evaluation
+            logo: agentevaluation.png
+          - name: Ragas
+            homepage_url: https://docs.ragas.io/en/stable/
+            repo_url: https://github.com/vibrantlabsai/ragas
+            logo: ragas.svg
+          - name: DeepEval
+            homepage_url: https://deepeval.com/
+            repo_url: https://github.com/confident-ai/deepeval
+            logo: deepeval.svg
+      - name: RAG
+        items:
+          - name: LlamaIndex
+            homepage_url: https://developers.llamaindex.ai/
+            repo_url: https://github.com/run-llama/llama_index
+            logo: llamaindex.svg
+          - name: Haystack
+            homepage_url: https://haystack.deepset.ai/
+            repo_url: https://github.com/deepset-ai/haystack
+            logo: haystack.png
+          - name: txtai
+            homepage_url: https://neuml.github.io/txtai/
+            repo_url: https://github.com/neuml/txtai
+            logo: txtai.png
+      - name: Frameworks
+        items:
+          - name: LangChain
+            homepage_url: https://docs.langchain.com/oss/python/langchain/
+            repo_url: https://github.com/langchain-ai/langchain
+            logo: langchain.svg
+          - name: LangGraph
+            homepage_url: https://docs.langchain.com/oss/python/langgraph/
+            repo_url: https://github.com/langchain-ai/langgraph
+            logo: langgraph.svg
+          - name: Langflow
+            homepage_url: http://www.langflow.org/
+            repo_url: https://github.com/langflow-ai/langflow
+            logo: langflow.png
+          - name: Crew AI
+            homepage_url: https://crewai.com/
+            repo_url: https://github.com/crewAIInc/crewAI
+            logo: crewai.svg
+          - name: Semantic Kernel
+            homepage_url: https://aka.ms/semantic-kernel
+            repo_url: https://github.com/microsoft/semantic-kernel
+            logo: semantickernel.svg
+          - name: Autogen
+            homepage_url: https://microsoft.github.io/autogen/
+            repo_url: https://github.com/microsoft/autogen
+            logo: autogen.svg
+          - name: Smolagents
+            homepage_url: https://huggingface.co/docs/smolagents
+            repo_url: https://github.com/huggingface/smolagents
+            logo: smolagents.svg
+          - name: Strands
+            homepage_url: https://strandsagents.com/
+            repo_url: https://github.com/strands-agents/sdk-python
+            logo: strands.svg
+      - name: Memory
+        items:
+          - name: mem0
+            homepage_url: https://mem0.ai/
+            repo_url: https://github.com/mem0ai/mem0
+            logo: mem0.svg
+          - name: Letta
+            homepage_url: https://www.letta.com/
+            repo_url: https://github.com/letta-ai/letta
+            logo: letta.svg
+          - name: LangMem
+            homepage_url: https://langchain-ai.github.io/langmem/
+            repo_url: https://github.com/langchain-ai/langmem
+            logo: langgraph.svg
+      - name: Observability
+        items:
+          - name: LangFuse
+            homepage_url: https://langfuse.com/
+            repo_url: https://github.com/langfuse/langfuse
+            logo: langfuse.svg
+          - name: LangSmith
+            homepage_url: https://smith.langchain.com/
+            logo: langsmith.svg
+          - name: OpenLLMetry
+            homepage_url: https://www.traceloop.com/openllmetry
+            repo_url: https://github.com/traceloop/openllmetry
+            logo: openllmetry.svg
+          - name: Arize Phoenix
+            homepage_url: https://arize.com/docs/phoenix
+            repo_url: https://github.com/Arize-ai/phoenix
+            logo: arize.svg
+          - name: Helicone
+            homepage_url: https://www.helicone.ai/
+            repo_url: https://github.com/Helicone/helicone
+            logo: helicone.svg
+          - name: Comet Optik
+            homepage_url: https://www.comet.com/docs/opik/
+            repo_url: https://github.com/comet-ml/opik
+            logo: comet.svg
+      - name: Code Sandbox
+        items:
+          - name: e2b
+            homepage_url: https://e2b.dev
+            repo_url: https://github.com/e2b-dev/infra
+            logo: e2b.svg
+      - name: IAM
+        items:
+          - name: Keycloak
+            homepage_url: https://www.keycloak.org/
+            repo_url: https://github.com/keycloak/keycloak
+            logo: keycloak.svg
+      - name: LLM Gateway
+        items:
+          - name: LiteLLM
+            homepage_url: https://www.litellm.ai/
+            repo_url: https://github.com/BerriAI/litellm
+            logo: litellm.svg
+          - name: Envoy
+            homepage_url: https://aigateway.envoyproxy.io/
+            repo_url: https://github.com/envoyproxy/ai-gateway
+            logo: envoy.svg
+          - name: Kong
+            homepage_url: https://konghq.com/install/
+            repo_url: https://github.com/Kong/kong
+            logo: kong.svg
+          - name: PortKey
+            homepage_url: https://portkey.ai/features/ai-gateway
+            repo_url: https://github.com/Portkey-AI/gateway
+            logo: portkey.svg
+          - name: kgateway
+            homepage_url: https://kgateway.dev/
+            repo_url: https://github.com/kgateway-dev/kgateway
+            logo: kgateway.svg
+          - name: higress
+            homepage_url: https://higress.ai/
+            repo_url: https://github.com/alibaba/higress
+            logo: higress.png
+      - name: Agentic Gateways
+        items:
+          - name: Agent Gateway
+            homepage_url: https://agentgateway.dev/
+            repo_url: https://github.com/agentgateway/agentgateway
+            logo: agentgateway.svg
+          - name: MCP Gateway Registry
+            homepage_url: https://agentic-community.github.io/mcp-gateway-registry/
+            repo_url: https://github.com/agentic-community/mcp-gateway-registry
+            logo: logo.svg
+          - name: MCP Registry
+            homepage_url: https://github.com/modelcontextprotocol/registry/tree/main/docs
+            repo_url: https://github.com/modelcontextprotocol/registry
+            logo: mcp.svg
+  - name: Infrastructure
+    subcategories:
+      - name: Vector DBs
+        items:
+          - name: Milvus
+            homepage_url: https://milvus.io/
+            repo_url: https://github.com/milvus-io/milvus
+            logo: milvus.svg
+          - name: marqo
+            homepage_url: https://www.marqo.ai/
+            repo_url: https://github.com/marqo-ai/marqo
+            logo: marqo.svg
+          - name: Weaviate
+            homepage_url: https://weaviate.io/developers/weaviate/
+            repo_url: https://github.com/weaviate/weaviate
+            logo: weaviate.svg
+          - name: Qdrant
+            homepage_url: https://cloud.qdrant.io/
+            repo_url: https://github.com/qdrant/qdrant
+            logo: qdrant.svg
+          - name: pgvector
+            homepage_url: https://github.com/pgvector/pgvector
+            repo_url: https://github.com/pgvector/pgvector
+            logo: pgvector.svg
+  - name: LLMs
+    subcategories:
+      - name: Serving
+        items:
+          - name: vLLM
+            homepage_url: https://vllm.ai/
+            logo: vllm.svg
+            repo_url: https://github.com/vllm-project/vllm
+          - name: SGLang
+            homepage_url: https://www.sglang.io/
+            logo: sglang.png
+            repo_url: https://github.com/sgl-project/sglang
