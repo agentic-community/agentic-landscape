@@ -8,7 +8,7 @@ foundation: Agentic Community
 
 url: http://127.0.0.1:8000
 
-base_path: /agentic-landscape
+base_path: /
 
 colors:
   color1: "rgba(0, 107, 204, 1)"
