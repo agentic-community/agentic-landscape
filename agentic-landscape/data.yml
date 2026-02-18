@@ -198,7 +198,7 @@ categories:
             logo: pgvector.svg
           - name: OpenSearch
             homepage_url: https://opensearch.org/platform/vector-engine/
-            repo_url: https://github.com/opensearch-project/
+            repo_url: https://github.com/opensearch-project/OpenSearch
             logo: Opensearch_Logo.svg
   - name: LLMs
     subcategories:
