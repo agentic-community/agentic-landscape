@@ -196,6 +196,10 @@ categories:
             homepage_url: https://github.com/pgvector/pgvector
             repo_url: https://github.com/pgvector/pgvector
             logo: pgvector.svg
+          - name: OpenSearch
+            homepage_url: https://opensearch.org/platform/vector-engine/
+            repo_url: https://github.com/opensearch-project/
+            logo: Opensearch_Logo.svg
   - name: LLMs
     subcategories:
       - name: Serving
