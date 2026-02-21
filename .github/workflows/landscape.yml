@@ -44,5 +44,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: landscape.agentic-community.com
           publish_dir: ./build
           publish_branch: gh-pages
