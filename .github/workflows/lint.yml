@@ -1,0 +1,24 @@
+name: Lint data.yml
+
+on:
+  push:
+    branches: [main]
+    paths: ["agentic-landscape/data.yml"]
+  pull_request:
+    branches: [main]
+    paths: ["agentic-landscape/data.yml"]
+
+jobs:
+  check-sort-order:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Check alphabetical order
+        run: python .github/scripts/check-sort-order.py agentic-landscape/data.yml
