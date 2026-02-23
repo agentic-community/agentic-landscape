@@ -5,28 +5,105 @@
 # Reference documentation: https://github.com/cncf/landscape2/blob/main/docs/config/guide.yml
 
 categories:
-  - category: "Category 1"
+  - category: "Agentic"
     content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      The Agentic category covers the full stack of tools, frameworks, and infrastructure for building, deploying, and operating AI agents. This includes everything from the core agent SDKs and orchestration frameworks to the supporting ecosystem of observability, security, and gateway infrastructure that production agent systems require.
 
     subcategories:
-      - subcategory: "Subcategory 1-1"
+      - subcategory: "Runtime"
         content: |
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Container orchestration and runtime platforms for deploying and scaling agentic workloads in production. These provide the compute substrate on which agent services, LLM inference, and supporting infrastructure run.
 
-      - subcategory: "Subcategory 1-2"
+      - subcategory: "Agent Protocols"
         content: |
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Open standards and specifications that define how agents communicate with tools, data sources, and other agents. These protocols enable interoperability across the ecosystem so that agents built with different frameworks can work together and share capabilities.
 
-  - category: "Category 2"
+      - subcategory: "Frameworks"
+        content: |
+          SDKs and libraries for building AI agents. These provide the core abstractions for defining agent behavior, chaining LLM calls, managing tool use, and coordinating multi-agent systems. Frameworks range from lightweight single-agent libraries to full platforms with visual builders and multi-agent orchestration.
+
+      - subcategory: "Workflow Orchestration"
+        content: |
+          Durable execution engines for running multi-step agent workflows reliably. These systems handle retries, timeouts, state persistence, and failure recovery — concerns that become critical when agents perform long-running tasks with real-world side effects.
+
+      - subcategory: "Coding Agents"
+        content: |
+          Autonomous software engineering agents that can read, write, and modify code. These tools range from IDE assistants that suggest edits to fully autonomous agents that can resolve issues, implement features, and submit pull requests with minimal human intervention.
+
+      - subcategory: "Voice Agents"
+        content: |
+          Frameworks for building voice-based and multimodal AI agents. These handle the full pipeline of speech-to-text, LLM reasoning, and text-to-speech with low-latency streaming, enabling real-time conversational agents for phone systems, customer support, and interactive applications.
+
+      - subcategory: "Tool Integration"
+        content: |
+          Platforms that connect agents to external tools, APIs, and browser environments. Rather than writing custom integrations for each service, these tools provide unified interfaces for agents to interact with hundreds of third-party applications and web pages.
+
+      - subcategory: "Search & Web Access"
+        content: |
+          Web crawling, scraping, and search tools purpose-built for AI agents. These convert web pages into clean, structured content that LLMs can consume, and provide search APIs optimized for agent retrieval needs rather than traditional web search.
+
+      - subcategory: "Structured Output"
+        content: |
+          Libraries for constraining LLM outputs to follow specific schemas, types, or grammars. Reliable structured output is foundational for agents that need to produce valid JSON, call functions with correct arguments, or generate data that downstream systems can parse deterministically.
+
+      - subcategory: "RAG"
+        content: |
+          Retrieval-augmented generation frameworks and document processing pipelines. These tools handle the full RAG lifecycle: ingesting documents in various formats, chunking and embedding text, retrieving relevant context, and augmenting LLM prompts with retrieved information.
+
+      - subcategory: "Memory"
+        content: |
+          Persistent memory systems that give agents the ability to remember context across conversations and sessions. These go beyond simple chat history to provide semantic memory, user preference tracking, and long-term knowledge retention that makes agents more personalized and effective over time.
+
+      - subcategory: "Evaluations"
+        content: |
+          Frameworks for testing, benchmarking, and evaluating AI agents and LLM applications. These tools measure response quality, faithfulness, relevance, and task completion — providing the feedback loop needed to iterate on agent behavior and catch regressions before deployment.
+
+      - subcategory: "Guardrails"
+        content: |
+          Safety and validation layers that constrain agent behavior. Guardrails intercept LLM inputs and outputs to enforce policies, block harmful content, prevent prompt injection, validate factual accuracy, and ensure agents stay within defined behavioral boundaries.
+
+      - subcategory: "Observability"
+        content: |
+          Tracing, logging, and monitoring tools for LLM applications and agent systems. These provide visibility into prompt chains, token usage, latency, costs, and agent decision paths — essential for debugging, optimizing, and operating agents in production.
+
+      - subcategory: "Code Sandbox"
+        content: |
+          Isolated execution environments where agents can safely run code, scripts, and browser sessions. Sandboxes provide agents with compute capabilities while preventing unintended side effects on host systems, making it safe to let agents execute arbitrary code as part of their workflows.
+
+      - subcategory: "IAM"
+        content: |
+          Identity and access management tools for controlling who and what can access agent systems. This includes authentication, authorization, and policy enforcement — critical for multi-tenant agent deployments and for managing the credentials agents use to access external services.
+
+      - subcategory: "LLM Gateway"
+        content: |
+          API gateways and proxies that sit between agents and LLM providers. These handle routing, load balancing, rate limiting, fallback between models, cost tracking, and caching — providing a unified API layer that decouples agent code from specific LLM providers.
+
+      - subcategory: "Agentic Gateways"
+        content: |
+          Gateway infrastructure specifically designed for agent-to-agent and agent-to-tool communication. These include registries for discovering agent capabilities and MCP servers, as well as proxies that handle protocol translation and routing between agents and their tool ecosystems.
+
+  - category: "Infrastructure"
     content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      The Infrastructure category covers the data storage and retrieval systems that underpin agentic AI applications. Agents need fast, scalable access to both unstructured knowledge (via vector search) and structured relationships (via knowledge graphs) to reason effectively about the world.
 
     subcategories:
-      - subcategory: "Subcategory 2-1"
+      - subcategory: "Vector DBs"
         content: |
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Databases optimized for storing and querying high-dimensional vector embeddings. Vector databases are the backbone of RAG systems and semantic search, enabling agents to find relevant information by meaning rather than exact keyword match. Options range from purpose-built vector databases to vector extensions for existing databases.
 
-      - subcategory: "Subcategory 2-2"
+      - subcategory: "Knowledge Graphs"
         content: |
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Graph databases for storing and querying structured relationships between entities. Knowledge graphs complement vector search by providing agents with explicit relational reasoning capabilities — enabling queries like "find all services that depend on this component" that are difficult to express with vector similarity alone.
+
+  - category: "LLMs"
+    content: |
+      The LLMs category covers the model layer: inference engines for serving models in production and tools for customizing models through fine-tuning. These are the foundational compute components that power every agent in the landscape.
+
+    subcategories:
+      - subcategory: "Serving"
+        content: |
+          High-performance inference engines for running LLMs in production. These handle batching, quantization, KV-cache management, speculative decoding, and other optimizations that make it practical to serve large models at scale with acceptable latency and cost.
+
+      - subcategory: "Fine-tuning"
+        content: |
+          Tools for customizing pre-trained language models on domain-specific data. Fine-tuning enables agents to use models that are specialized for particular tasks, domains, or output formats — often achieving better results at lower inference cost than prompting a general-purpose model.
