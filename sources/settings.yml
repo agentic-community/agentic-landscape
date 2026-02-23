@@ -49,6 +49,7 @@ grid_items_size: large
 header:
   links:
     github: "https://github.com/agentic-community/"
+  motd: "Missing a project? Contributions and issues are welcome! [Open an issue or PR](https://github.com/agentic-community/agentic-landscape)"
 #  logo: "build/images/logo.svg"
 
 #screenshot_width: 1500
