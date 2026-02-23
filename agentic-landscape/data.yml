@@ -46,7 +46,7 @@ categories:
               summary_tags: Open Source
             logo: camelai.png
           - name: Crew AI
-            homepage_url: https://crewai.com/
+            homepage_url: https://www.crewai.com/
             repo_url: https://github.com/crewAIInc/crewAI
             extra:
               summary_tags: Open Core
@@ -76,7 +76,7 @@ categories:
               summary_tags: Open Source
             logo: pydanticai.png
           - name: Semantic Kernel
-            homepage_url: https://aka.ms/semantic-kernel
+            homepage_url: https://learn.microsoft.com/en-us/semantic-kernel/overview/
             repo_url: https://github.com/microsoft/semantic-kernel
             extra:
               summary_tags: Open Source
@@ -128,7 +128,7 @@ categories:
               summary_tags: Open Source
             logo: aider.png
           - name: Continue
-            homepage_url: https://continue.dev/
+            homepage_url: https://www.continue.dev/
             repo_url: https://github.com/continuedev/continue
             extra:
               summary_tags: Open Core
@@ -160,7 +160,7 @@ categories:
               summary_tags: Open Source
             logo: pipecat.png
           - name: Vocode
-            homepage_url: https://www.vocode.dev/
+            homepage_url: https://github.com/vocodedev/
             repo_url: https://github.com/vocodedev/vocode-core
             extra:
               summary_tags: Open Source
@@ -182,7 +182,7 @@ categories:
       - name: Search & Web Access
         items:
           - name: Crawl4AI
-            homepage_url: https://crawl4ai.com/
+            homepage_url: https://docs.crawl4ai.com/
             repo_url: https://github.com/unclecode/crawl4ai
             extra:
               summary_tags: Open Source
@@ -234,7 +234,7 @@ categories:
       - name: RAG
         items:
           - name: Docling
-            homepage_url: https://ds4sd.github.io/docling/
+            homepage_url: https://www.docling.ai/
             repo_url: https://github.com/docling-project/docling
             extra:
               summary_tags: Open Source
@@ -310,7 +310,7 @@ categories:
               summary_tags: Open Source
             logo: hal.png
           - name: Promptfoo
-            homepage_url: https://promptfoo.dev/
+            homepage_url: https://www.promptfoo.dev/
             repo_url: https://github.com/promptfoo/promptfoo
             extra:
               summary_tags: Open Core
@@ -322,7 +322,7 @@ categories:
               summary_tags: Open Source
             logo: ragas.svg
           - name: TruLens
-            homepage_url: https://trulens.org
+            homepage_url: https://www.trulens.org/
             repo_url: https://github.com/truera/trulens
             extra:
               summary_tags: Open Source
@@ -330,13 +330,13 @@ categories:
       - name: Guardrails
         items:
           - name: Guardrails AI
-            homepage_url: https://www.guardrailsai.com/
+            homepage_url: https://guardrailsai.com/
             repo_url: https://github.com/guardrails-ai/guardrails
             extra:
               summary_tags: Open Core
             logo: guardrailsai.png
           - name: LLM Guard
-            homepage_url: https://llm-guard.com/
+            homepage_url: https://protectai.github.io/llm-guard/
             repo_url: https://github.com/protectai/llm-guard
             extra:
               summary_tags: Open Source
@@ -393,7 +393,7 @@ categories:
       - name: Code Sandbox
         items:
           - name: Daytona
-            homepage_url: https://daytona.io/
+            homepage_url: https://www.daytona.io/
             repo_url: https://github.com/daytonaio/daytona
             extra:
               summary_tags: Open Core
@@ -445,7 +445,7 @@ categories:
               summary_tags: Open Source
             logo: kgateway.svg
           - name: Kong
-            homepage_url: https://konghq.com/install/
+            homepage_url: https://developer.konghq.com/gateway/install/
             repo_url: https://github.com/Kong/kong
             extra:
               summary_tags: Open Core
@@ -535,7 +535,7 @@ categories:
               summary_tags: Open Core
             logo: qdrant.svg
           - name: Weaviate
-            homepage_url: https://weaviate.io/developers/weaviate/
+            homepage_url: https://docs.weaviate.io/weaviate
             repo_url: https://github.com/weaviate/weaviate
             extra:
               summary_tags: Open Core
