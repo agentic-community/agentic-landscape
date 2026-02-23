@@ -22,3 +22,28 @@ jobs:
 
       - name: Check alphabetical order
         run: python .github/scripts/check-sort-order.py agentic-landscape/data.yml
+
+  validate-entries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Get base data.yml for diff
+        if: github.event_name == 'pull_request'
+        run: git show ${{ github.event.pull_request.base.sha }}:agentic-landscape/data.yml > /tmp/base-data.yml
+
+      - name: Validate (PR — only changed items)
+        if: github.event_name == 'pull_request'
+        run: python .github/scripts/validate-data.py agentic-landscape/data.yml --base /tmp/base-data.yml
+
+      - name: Validate (push — tags/schema only)
+        if: github.event_name == 'push'
+        run: SKIP_URL_CHECKS=1 python .github/scripts/validate-data.py agentic-landscape/data.yml
