@@ -66,11 +66,23 @@ def check_url(url):
         final_url = resp.geturl()
         final_host = urlparse(final_url).hostname
 
+        # Same-host redirects are fine (e.g. /path -> /path/), only flag cross-host redirects
         if original_host != final_host:
             return False, f"redirects to different host: {original_host} -> {final_host} ({final_url})"
         return True, "ok"
 
     except urllib.error.HTTPError as e:
+        # 3xx redirects: urllib doesn't always follow them on HEAD requests.
+        # Check the Location header — same-host redirects are fine.
+        if e.code in (301, 302, 307, 308):
+            location = e.headers.get("Location", "")
+            if location:
+                redirect_host = urlparse(location).hostname
+                # Relative redirects or same-host redirects are fine
+                if redirect_host is None or redirect_host == original_host:
+                    return True, "ok"
+                return False, f"redirects to different host: {original_host} -> {redirect_host} ({location})"
+            return True, "ok"
         # Some servers reject HEAD, retry with GET
         if e.code in (405, 403):
             try:
