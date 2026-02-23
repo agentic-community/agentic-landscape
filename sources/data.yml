@@ -412,6 +412,12 @@ categories:
             logo: jupyterenterprise.png
       - name: IAM
         items:
+          - name: Cedar
+            homepage_url: https://www.cedarpolicy.com/en
+            repo_url: https://github.com/cedar-policy/cedar
+            extra:
+              summary_tags: Open Source
+            logo: cedar.png
           - name: Keycloak
             homepage_url: https://www.keycloak.org/
             repo_url: https://github.com/keycloak/keycloak
